@@ -1,0 +1,4 @@
+project: PROJECT
+target: bplist_fuzzer
+cmds:
+- cmd: /out/bplist_fuzzer

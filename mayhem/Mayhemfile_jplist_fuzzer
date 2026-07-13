@@ -1,0 +1,10 @@
+project: libplist
+target: jplist_fuzzer
+
+cmds:
+  - cmd: /mayhem/out/jplist_fuzzer
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/jplist_fuzzer/testsuite

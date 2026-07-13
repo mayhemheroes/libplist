@@ -1,0 +1,10 @@
+project: libplist
+target: oplist_fuzzer
+
+cmds:
+  - cmd: /mayhem/out/oplist_fuzzer
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/oplist_fuzzer/testsuite
